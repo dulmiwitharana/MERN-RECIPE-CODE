@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f510f;
+    padding: 10px 20px; /* Added some padding on the left and right for better spacing */
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px; /* Add gap between links */
+  }
+  
+  .nav-links a,
+  .nav-links button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #092f09;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .nav-links a:hover,
+  .nav-links button:hover {
+    background-color: #3c5042;
+    border-radius: 5px;
+  }
+  
+  .nav-links button {
+    background-color: #092f09;
+    font-size: 16px;
+    border: 1px solid white;
+    
+  }
+  

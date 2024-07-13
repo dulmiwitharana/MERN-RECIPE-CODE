@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Home Component styles */
+.home {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #218838;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.home ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.home li {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.home li:hover {
+    transform: translateY(-10px);
+}
+
+.home li button {
+    padding: 10px 20px;
+    margin-top: auto; 
+    background-color: #218838; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center button horizontally */
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none; /* Remove outline on focus */
+    margin-bottom: 10px;
+    margin-left:20px ;
+}
+
+.home li button:hover {
+    background-color: #1e7e34; /* Darker shade on hover */
+}
+
+/* Style for disabled button */
+.home li button:disabled {
+    background-color: #dddddd; 
+    cursor: not-allowed; 
+    color: #999999;
+}
+
+.home h2 {
+    font-size: 24px;
+    color: #0f510f;
+    margin: 20px 0 10px 0; /* Adjusted margin */
+    text-align: center;
+}
+
+.home .instructions {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.home .instructions p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555;
+    text-align: justify;
+}
+
+/* Updated recipe-image class */
+.recipe-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%; /* Adjust this value as needed */
+    height: 200px; /* Adjust this value as needed */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.home p {
+    font-size: 16px;
+    color: #333333;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
